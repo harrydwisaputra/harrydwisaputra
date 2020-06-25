@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Soal No 4</title>
+</head>
+<body>
+<script language="javascript">
+<!--
+
+function reverseString(str) {
+ // 1. split string menjadi array substring
+ var splitString = str.split('');
+ // hasilnya: [ 'h', 'e', 'l', 'l', 'o' ]
+ 
+ // 2. reverse array
+ var reverseArray = splitString.reverse();
+ // hasilnya: [ 'o', 'l', 'l', 'e', 'h' ]// 3. gabungkan semua element array menjadi string
+ var joinArray = reverseArray.join('');
+ // hasilny: olleh
+ 
+ return joinArray;
+}
+
+console.log(reverseString('hello'));
+
+
+function palindrom(){
+	var str = document.fform.bilangan1.value;
+	var splitString = str.split('');
+	var reverseArray = splitString.reverse();
+	var joinArray = reverseArray.join('');
+	
+	if(str == joinArray)
+	{
+		document.getElementById("hasil1").innerHTML = "Hasil palindrom " + str + " menjadi " + joinArray + " = true";
+	}
+	else
+	{
+		document.getElementById("hasil1").innerHTML = "Hasil palindrom " + str + " menjadi " + joinArray + " = false";
+	}
+}
+
+//--></script>
+
+<FORM NAME="fform">	
+		Input Kalimat     :<input type="text" size="11" name="bilangan1">
+        <input type="button" value="Cek Kalimat" onclick="palindrom()">
+		<div id="hasil1"> </div>
+</FORM>
+</BODY>
+</HTML>

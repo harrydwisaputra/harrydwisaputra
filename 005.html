@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Soal No 5</title>
+</head>
+<body>
+    <p><script language="javascript">
+<!--
+function tahun()
+{
+	var angka1 = document.fform.bilangan1.value;
+	var angka2 = document.fform.bilangan2.value;
+	var text = "";	
+	var hasil = "";
+	
+	for (x = angka1; x <= angka2; x++) 
+	{
+		//text += "Tahun " + x + "<br>" ;
+		if( (0 == x % 4) && (0 != x % 100) || (0 == x % 400) )
+		{ 
+		 text += "<br> Tahun " + x + " adalah kabisat <br>" ;
+		}
+		else
+		{
+		 text += "<br> Tahun " + x + " adalah bukan kabisat <br>" ;
+		}
+	}
+	
+	document.getElementById("hasil3").innerHTML = text;
+   
+}
+//--></script></p>
+<FORM NAME="fform">
+        Input Tahun Awal     :<input type="text" size="11" name="bilangan1"> <br>
+		Input Tahun Akhir    :<input type="text" size="11" name="bilangan2"> <br>
+        <input type="button" value="Cek Tahun" onclick="tahun()">
+		
+		<div id="hasil1"> </div>
+		<div id="hasil2"> </div>
+		<div id="hasil3"> </div>
+    </FORM>
+</BODY>
+</HTML>

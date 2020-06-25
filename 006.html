@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Soal No 6</title>
+</head>
+<body>
+    <p><script language="javascript">
+<!--
+function faktorial(){
+	var hsl = 0;
+	var angka1 = document.fform.bilangan1.value;
+	var angka=1;
+	var faktor=1;
+	 while(angka<=angka1){
+		 faktor=faktor*angka;
+		 angka=angka+1;
+	 }
+	 hsl = console.log(faktor)
+	 document.getElementById("hasil1").innerHTML = "Hasil Perhitungan Faktorial = " + faktor;
+}
+//--></script></p>
+<FORM NAME="fform">	
+		Input Angka     :<input type="text" size="11" name="bilangan1">
+        <input type="button" value="Faktorial" onclick="faktorial()">
+		<div id="hasil1"> </div>
+    </FORM>
+</BODY>
+</HTML>

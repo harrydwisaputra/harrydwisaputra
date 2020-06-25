@@ -1,0 +1,27 @@
+<html>
+<head><title>Soal No 2</title></head>
+<body>
+    <p><script language="javascript">
+<!--
+function gilnap()
+{
+	var angka = document.fform.bilangan1.value;
+	var hitung = angka % 2; 
+	
+    if(hitung == 0)
+        {
+        alert("Bilangan Genap" );
+        }
+        else
+        {
+        alert("Bilangan Ganjil");
+        }   
+        location.reload();
+}
+//--></script></p>
+<FORM NAME="fform">
+        Input Angka       :<input type="text" size="11" name="bilangan1">
+        <input type="button" value="Cek" onclick="gilnap()">
+    </FORM>
+</BODY>
+</HTML>

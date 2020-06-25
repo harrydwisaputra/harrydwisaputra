@@ -1,0 +1,38 @@
+<html>
+<head><title>Soal No 1</title></head>
+<body>
+    <p><script language="javascript">
+<!--
+function grade()
+{
+	var angka = document.fform.bilangan1.value;
+	
+    if(angka>=90)
+        {
+        alert("A" );
+        }
+        else if (angka<=89 && angka >= 80)
+        {
+        alert("B");
+        }
+        else if (angka<=79 && angka >= 70 )
+        {
+        alert("C");
+        }
+        else if (angka<=69 && angka >=60)
+        {
+        alert("D");
+        }
+        else
+        {
+        alert("E");
+        }   
+        location.reload();
+}
+//--></script></p>
+<FORM NAME="fform">
+        Input Angka       :<input type="text" size="11" name="bilangan1">
+        <input type="button" value="Cek" onclick="grade()">
+    </FORM>
+</BODY>
+</HTML>

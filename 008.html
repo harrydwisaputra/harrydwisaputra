@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Soal No 8</title>
+</head>
+<body>
+<script language="javascript">
+var Name = prompt("Masukkan Angka : ");
+var counter = 0;
+
+while(Name){
+	var angka = parseFloat(Name);
+    counter += angka;
+    Name = prompt("Masukkan Angka : ");
+	if(Name == "=")
+	{
+		break;
+	}
+}
+	document.write("Jumlah = " + counter);
+</script>
+<div id="name"></div>
+</BODY>
+</HTML>
